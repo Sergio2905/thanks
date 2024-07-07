@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240707150014">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240707150014"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="thanks-widget">
+            <div class="thanks-widget__container container">
+                <div class="thanks-widget__body">
+                    <div class="thanks-widget__details">
+                        <div class="thanks-widget__item">
+                            <div class="thanks-widget__value">2 450</div>
+                            <div class="thanks-widget__total">тедкоинов всего у тебя</div>
+                            <a href="#" class="thanks-widget__link">Обменять на подарки</a>
+                        </div>
+                        <div class="thanks-widget__item">
+                            <div class="thanks-widget__value">450</div>
+                            <div class="thanks-widget__total">тедкоинов для спасибо</div>
+                            <div class="thanks-widget__end">Сгорят: 31 марта</div>
+                        </div>
+                    </div>
+                    <div class="thanks-widget__period">
+                        <h2 class="thanks-widget__title">Благодарности коллег за месяц</h2>
+                        <div class="thanks-widget__block">
+                            <div class="thanks-widget__images">
+                                <div class="thanks-widget__image">
+                                    <picture><source srcset="img/thanks/image1.webp" type="image/webp"><img src="img/thanks/image1.jpg" alt="Image"></picture>
+                                </div>
+                                <div class="thanks-widget__image">
+                                    <picture><source srcset="img/thanks/image2.webp" type="image/webp"><img src="img/thanks/image2.jpg" alt="Image"></picture>
+                                </div>
+                                <div class="thanks-widget__image">
+                                    <picture><source srcset="img/thanks/image1.webp" type="image/webp"><img src="img/thanks/image1.jpg" alt="Image"></picture>
+                                </div>
+                            </div>
+                            <div class="thanks-widget__info">
+                                <a href="#" class="thanks-widget__name">Игорь Кузнецов</a>
+                                <div class="thanks-widget__more">+ ещё 6 коллег сказало вам спасибо</div>
+                            </div>
+                        </div>
+                        <a href="#" class="thanks-widget__history">
+                            <svg>
+                                <use href="img/icons/icons.svg#hearts"></use>
+                            </svg>
+                            История благодарностей
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="how-to-say-thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content how-modal">
+            <h2 class="how-modal__title">Как поблагодарить коллег</h2>
+            <ol class="how-modal__list">
+                <li class="how-modal__item">
+                    Выбери одного или несколько сотрудников, которому ты хочешь выразить благодарность
+                </li>
+                <li class="how-modal__item">
+                    Нажми на кнопку «Поблагодарить коллег» на главной странице Compass или в профиле сотрудника
+                </li>
+                <li class="how-modal__item">
+                    Напиши сообщение, содержащее вашу благодарность, и выбери уровень ценность, которой
+                    соответствует твоя благодарность
+                </li>
+                <li class="how-modal__item">
+                    Выбери на сколько тедкоинов вы хотите отблагодарить коллегу.
+                </li>
+                <li class="how-modal__item">
+                    Нажми кнопку «Поблагодарить». Она тут же будет опубликована в общей и персональной ленте
+                    благодарностей!
+                </li>
+                <li class="how-modal__item">
+                    В конце месяца сотрудник получит все тедкоины, которые были отправлены ему в качестве
+                    благодарности
+                </li>
+            </ol>
+            <p class="how-modal__text">
+                Система «Compass» позволяет сохранять все благодарности
+                и отслеживать, кому и за что ты выразил свою признательность. Это поможет поддерживать хорошие
+                отношения внутри фирмы и укрепить корпоративную культуру. Благодарим тебя, за то, что делаешь наш
+                коллектив лучше!
+            </p>
+            <button type="button" class="how-modal__close modal__close">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="say-thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content thanks-modal">
+            <h2 class="thanks-modal__title">Хочу сказать спасибо</h2>
+            <div class="thanks-modal__progress progress-thanks" data-step="step1">
+                <div class="progress-thanks__bar"></div>
+                <div class="progress-thanks__body">
+                    <div class="progress-thanks__step">Выбор коллег и написание благодарности</div>
+                    <div class="progress-thanks__step">Выбор соответствующей ценности</div>
+                    <div class="progress-thanks__step">Награждение <br>за помощь</div>
+                </div>
+            </div>
+            <div class="thanks-modal__body">
+                <div class="thanks-modal__wrapper" data-step="step1">
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <div class="thanks-modal__input input-thanks">
+                                <div class="input-thanks__label">Выбери одного или несколько коллег для благодарности
+                                </div>
+                                <select multiple="" data-placeholder=" " class="input-thanks__select select"
+                                    tabindex="-1" style="display: none;">
+                                    <option value=""></option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                </select>
+                            </div>
+                            <div class="thanks-modal__input input-thanks">
+                                <div class="input-thanks__header">
+                                    <div class="input-thanks__label">Расскажи, как коллега тебе помог</div>
+                                    <a href="#" class="input-thanks__link" data-modal="how-to-say-thanks">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#info"></use>
+                                        </svg>
+                                        Как лучше всего благодарить
+                                    </a>
+                                </div>
+                                <textarea name="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__next" data-target="step2">Далее</button>
+                            <button type="button" class="thanks-modal__cancel modal__close">Отмена</button>
+                        </div>
+                    </div>
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <div class="thanks-modal__radio radio-thanks radio">
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">Д</div>
+                                        <div class="radio-thanks__name">Деловая этика</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Мы честны, соблюдаем этические нормы и ставим во
+                                            главу угла доверие к нашему бизнесу</h2>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Мы против победы любой ценой.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Доверие дает нам базу, основу, фундамент во всем, что мы делаем.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Нашему бизнесу доверяют, потому что мы последовательны, у нас есть
+                                                правила,
+                                                которые мы не нарушаем.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Кодекс этики – основа нашего поведения и руководство для принятия
+                                                решений во
+                                                всех ситуациях.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Как только мы один раз пошли на сделку с совестью, мы теряем доверие к
+                                                себе
+                                                и рушим все, на чем строится наша бизнес-модель.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Наш бизнес строится на доверии клиентов и сотрудников.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="d">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">О</div>
+                                        <div class="radio-thanks__name">Отношения</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="o">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__next" data-target="step3">Далее</button>
+                            <button type="button" class="thanks-modal__prev" data-target="step1">Назад</button>
+                        </div>
+                    </div>
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <p class="thanks-modal__text">
+                                Выбери количество тедкоинов, которое будет отправлено каждому коллеге
+                            </p>
+                            <p class="thanks-modal__user">
+                                Мария Абрамович (maria.abramovich@tedo.ru)
+                            </p>
+                            <div class="thanks-modal__grade">
+                                <div class="thanks-modal__coins">0 тедкоинов</div>
+                                <div class="thanks-modal__range range-single">
+                                    <input type="range" min="0" max="1000" step="1" value="0">
+                                    <div class="range-single__slider">
+                                        <div class="range-single__progress"></div>
+                                        <div class="range-single__thumb"></div>
+                                    </div>
+                                </div>
+                                <div class="thanks-modal__current">0</div>
+                            </div>
+                            <p class="thanks-modal__user">
+                                Константин Константинопольский (maria.abramovich@tedo.ru)
+                            </p>
+                            <div class="thanks-modal__grade">
+                                <div class="thanks-modal__coins">0 тедкоинов</div>
+                                <div class="thanks-modal__range range-single">
+                                    <input type="range" min="0" max="1000" step="1" value="0">
+                                    <div class="range-single__slider">
+                                        <div class="range-single__progress"></div>
+                                        <div class="range-single__thumb"></div>
+                                    </div>
+                                </div>
+                                <div class="thanks-modal__current">0</div>
+                            </div>
+                            <div class="thanks-modal__balance balance-thanks">
+                                <div class="balance-thanks__name">Текущий баланс:</div>
+                                <div class="balance-thanks__info">
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">200 тедкоинов спасибо</div>
+                                        <div class="balance-thanks__value">-200 тедкоинов спасибо</div>
+                                    </div>
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">800 тедкоинов</div>
+                                        <div class="balance-thanks__value">-100 тедкоинов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanks-modal__balance balance-thanks">
+                                <div class="balance-thanks__name">Остаток</div>
+                                <div class="balance-thanks__info">
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">0 тедкоинов спасибо</div>
+                                    </div>
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">700 тедкоинов</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__apply">Поблагодарить</button>
+                            <button type="button" class="thanks-modal__prev" data-target="step2">Назад</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240707150014"></script>
+</body>
+
+</html>

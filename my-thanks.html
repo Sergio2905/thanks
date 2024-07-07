@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240707150014">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240707150014"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="thanks-line">
+            <div class="thanks-line__container container">
+                <div class="thanks-line__body">
+                    <div class="thanks-line__header">
+                        <a href="#" class="thanks-line__back" title="back">
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                        <h2 class="thanks-line__title">Мои благодарности</h2>
+                    </div>
+                    <div class="thanks-line__values values-thanks">
+                        <a href="#" class="values-thanks__about">
+                            <svg>
+                                <use href="img/icons/icons.svg#info"></use>
+                            </svg>
+                            Подробнее о ценностях ТеДо
+                        </a>
+                        <div class="values-thanks__body">
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">Д</div>
+                                    <div class="values-thanks__count">12345</div>
+                                </div>
+                                <div class="values-thanks__name">Деловая этика</div>
+                                <p class="values-thanks__desc">
+                                    Мы честны, соблюдаем этические нормы и ставим во главу угла доверие к нашему бизнесу
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">О</div>
+                                    <div class="values-thanks__count">123</div>
+                                </div>
+                                <div class="values-thanks__name">Отношения</div>
+                                <p class="values-thanks__desc">
+                                    Мы уважаем, слушаем и поддерживаем друг друга
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">В</div>
+                                    <div class="values-thanks__count">9999+</div>
+                                </div>
+                                <div class="values-thanks__name">Высокое качество</div>
+                                <p class="values-thanks__desc">
+                                    Наши клиенты наш капитал. Мы всегда стремимся превзойти их ожидания благодаря
+                                    качеству оказываемых услуг
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">Е</div>
+                                    <div class="values-thanks__count">1</div>
+                                </div>
+                                <div class="values-thanks__name">Ежедневное развитие</div>
+                                <p class="values-thanks__desc">
+                                    Постоянное профессиональное развитие наш приоритет
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">Р</div>
+                                    <div class="values-thanks__count">22</div>
+                                </div>
+                                <div class="values-thanks__name">Результат</div>
+                                <p class="values-thanks__desc">
+                                    Мы ценим достигнутый результат, а не декларируемое стремление к нему
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">И</div>
+                                    <div class="values-thanks__count">1235</div>
+                                </div>
+                                <div class="values-thanks__name">Инновации</div>
+                                <p class="values-thanks__desc">
+                                    Находим новые решения и воплощаем смелые идеи
+                                </p>
+                            </div>
+                            <div class="values-thanks__item">
+                                <div class="values-thanks__header">
+                                    <div class="values-thanks__letter">Е</div>
+                                    <div class="values-thanks__count">0</div>
+                                </div>
+                                <div class="values-thanks__name">Единая фирма</div>
+                                <p class="values-thanks__desc">
+                                    Мы единая команда. Работа на общий результат — основа нашего успеха
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanks-line__tabs tabs">
+                        <div class="tabs__header">
+                            <div class="tabs__links">
+                                <a href="#tab1" class="tabs__link active">Меня благодарили</a>
+                                <a href="#tab2" class="tabs__link">Я благодарил (а)</a>
+                            </div>
+                            <div class="tabs__wrapper">
+                                <div data-id="tab1" class="tabs__options active">
+                                    <div class="thanks-line__option">
+                                        <select class="thanks-line__select select" tabindex="-1" style="display: none;">
+                                            <option value="value1">В этом месяце</option>
+                                            <option value="value2">Опция 2</option>
+                                            <option value="value3">Опция 3</option>
+                                            <option value="value4">Опция 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="thanks-line__option">
+                                        <select class="thanks-line__select select" tabindex="-1" style="display: none;">
+                                            <option value="value1">Сначала новые</option>
+                                            <option value="value2">Опция 2</option>
+                                            <option value="value3">Опция 3</option>
+                                            <option value="value4">Опция 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div data-id="tab2" class="tabs__options">
+                                    <div class="thanks-line__option">
+                                        <select class="thanks-line__select select" tabindex="-1" style="display: none;">
+                                            <option value="value1">В этом месяце</option>
+                                            <option value="value2">Опция 2</option>
+                                            <option value="value3">Опция 3</option>
+                                            <option value="value4">Опция 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="thanks-line__option">
+                                        <select class="thanks-line__select select" tabindex="-1" style="display: none;">
+                                            <option value="value1">Сначала новые</option>
+                                            <option value="value2">Опция 2</option>
+                                            <option value="value3">Опция 3</option>
+                                            <option value="value4">Опция 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body">
+                            <div id="tab1" class="tabs__block active">
+                                <ul class="thanks-line__list">
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image1.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image1.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                                <a href="#" class="item-thanks__user">Абрамович Мария</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">Д</div>
+                                        </div>
+                                    </li>
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image2.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image2.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                                <a href="#" class="item-thanks__user">Абрамович Мария</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">О</div>
+                                        </div>
+                                    </li>
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image1.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image1.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                                <a href="#" class="item-thanks__user">Абрамович Мария</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">Е</div>
+                                        </div>
+                                    </li>
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image2.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image2.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                                <a href="#" class="item-thanks__user">Абрамович Мария</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">Р</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2" class="tabs__block">
+                                <ul class="thanks-line__list">
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image1.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image1.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">Д</div>
+                                        </div>
+                                    </li>
+                                    <li class="thanks-line__item item-thanks">
+                                        <div class="item-thanks__photo lazy">
+                                            <picture>
+                                                <source data-srcset="img/thanks/image2.webp" srcset="img/plug.png"
+                                                    type="image/webp">
+                                                <img data-src="img/thanks/image2.jpg" src="img/plug.png" alt="Image">
+                                            </picture>
+                                        </div>
+                                        <div class="item-thanks__body">
+                                            <div class="item-thanks__users">
+                                                <a href="#" class="item-thanks__user">Солодовников Павел</a>
+                                            </div>
+                                            <div class="item-thanks__info">
+                                                <div class="item-thanks__letter">Д — доверие</div>
+                                                <div class="item-thanks__date">Дата: 16 марта 2024</div>
+                                            </div>
+                                            <p class="item-thanks__message">
+                                                Маш, спасибо тебе большое. Благодаря тому, что ты собрала в своё личное
+                                                время слайд
+                                                для
+                                                Лукойла мы смогли выиграть важный для нас тендер
+                                            </p>
+                                            <div class="item-thanks__decor">О</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="js/app.min.js?_v=20240707150014"></script>
+</body>
+
+</html>
