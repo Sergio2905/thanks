@@ -525,7 +525,7 @@ body._lock {
 
 .thanks-modal__body {
   overflow: hidden;
-  padding-bottom: 4px;
+  margin: 0 -5px;
 }
 
 .thanks-modal__wrapper {
@@ -546,6 +546,7 @@ body._lock {
   flex: 0 0 33.333%;
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 .thanks-modal__block {
