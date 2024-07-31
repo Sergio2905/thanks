@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240731203926">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240731203926"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="kpis-main">
+            <div class="kpis-main__container container">
+                <div class="kpis-main__header">
+                    <h2 class="kpis-main__title">Цели и KPIs</h2>
+                    <div class="kpis-main__dates">01/07/2024 - 30/06/2025</div>
+                    <div class="kpis-main__stage">
+                        Текущий этап:
+                        <span>Редактирование целей на стороне сотрудника</span>
+                    </div>
+                    <div class="kpis-main__options">
+                        Доступные действия:
+                        <button type="button" class="kpis-main__btn">
+                            Отправить тимлидеру
+                        </button>
+                    </div>
+                </div>
+                <div class="kpis-main__body">
+                    <div class="kpis-main__tabs-left tabs">
+                        <div class="tabs__header">
+                            <div class="tabs__links">
+                                <a href="#left-tab1" class="tabs__link active">Личная эффективность</a>
+                                <a href="#left-tab2" class="tabs__link">Единая фирма</a>
+                                <a href="#left-tab3" class="tabs__link">Трансформация</a>
+                                <a href="#left-tab4" class="tabs__link">Роль тимлидера</a>
+                            </div>
+                            <button type="button" class="kpis-main__add">
+                                <svg>
+                                    <use href="img/icons/icons.svg#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tabs__body">
+                            <div id="left-tab1" class="tabs__block active">
+                                <div class="kpis-main__table kpis-main-table">
+                                    <div class="kpis-main-table__head">
+                                        <div class="kpis-main-table__item">Цель</div>
+                                        <div class="kpis-main-table__item">Ожидаемый результат</div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">GM платформы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">56 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Индивидуальная выручка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">2,5 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обратная связь, min ср. оценка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">5</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательное обучение</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">50 час</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательные курсы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">4</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="kpis-main__new" data-modal="add-kpis">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#plus"></use>
+                                    </svg>
+                                    KPIs
+                                </button>
+                            </div>
+                            <div id="left-tab2" class="tabs__block">
+                                <div class="kpis-main__table kpis-main-table">
+                                    <div class="kpis-main-table__head">
+                                        <div class="kpis-main-table__item">Цель</div>
+                                        <div class="kpis-main-table__item">Ожидаемый результат</div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">GM платформы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">56 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Индивидуальная выручка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">2,5 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обратная связь, min ср. оценка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">5</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательное обучение</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">50 час</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательные курсы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">4</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="kpis-main__new" data-modal="add-kpis">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#plus"></use>
+                                    </svg>
+                                    KPIs
+                                </button>
+                            </div>
+                            <div id="left-tab3" class="tabs__block">
+                                <div class="kpis-main__table kpis-main-table">
+                                    <div class="kpis-main-table__head">
+                                        <div class="kpis-main-table__item">Цель</div>
+                                        <div class="kpis-main-table__item">Ожидаемый результат</div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">GM платформы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">56 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Индивидуальная выручка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">2,5 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обратная связь, min ср. оценка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">5</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательное обучение</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">50 час</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательные курсы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">4</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="kpis-main__new" data-modal="add-kpis">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#plus"></use>
+                                    </svg>
+                                    KPIs
+                                </button>
+                            </div>
+                            <div id="left-tab4" class="tabs__block">
+                                <div class="kpis-main__table kpis-main-table">
+                                    <div class="kpis-main-table__head">
+                                        <div class="kpis-main-table__item">Цель</div>
+                                        <div class="kpis-main-table__item">Ожидаемый результат</div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">GM платформы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">56 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Индивидуальная выручка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">2,5 млн руб.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обратная связь, min ср. оценка</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">5</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательное обучение</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">50 час</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__row">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Обязательные курсы</p>
+                                            <div class="kpis-main-table__help">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">4</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="kpis-main__new" data-modal="add-kpis">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#plus"></use>
+                                    </svg>
+                                    KPIs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kpis-main__tabs-right tabs">
+                        <div class="tabs__header">
+                            <a href="#right-tab1" class="tabs__link active">
+                                <svg>
+                                    <use href="img/icons/icons.svg#information"></use>
+                                </svg>
+                            </a>
+                            <a href="#right-tab2" class="tabs__link">
+                                <svg>
+                                    <use href="img/icons/icons.svg#chat"></use>
+                                </svg>
+                            </a>
+                            <a href="#right-tab3" class="tabs__link">
+                                <svg>
+                                    <use href="img/icons/icons.svg#clip"></use>
+                                </svg>
+                            </a>
+                            <a href="#right-tab4" class="tabs__link">
+                                <svg>
+                                    <use href="img/icons/icons.svg#clock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="tabs__body">
+                            <div id="right-tab1" class="tabs__block active">
+                                <div class="kpis-main__personal kpis-personal">
+                                    <h3 class="kpis-personal__title">Персональная информация</h3>
+                                    <div class="kpis-personal__profile">
+                                        Профиль
+                                        <a href="#" class="kpis-personal__link">Acceleration centre Intern</a>
+                                    </div>
+                                    <div class="kpis-personal__message kpis-personal-message">
+                                        <div class="kpis-personal-message__icon">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="kpis-personal-message__body">
+                                            <h3 class="kpis-personal-message__title">
+                                                Узнайте об изменениях профиля
+                                            </h3>
+                                            <p class="kpis-personal-message__text">
+                                                Профиль целеполагания изменен. Ознакомьтесь с изменениями и внесите
+                                                корректировки в свои цели
+                                            </p>
+                                        </div>
+                                        <button type="button" class="kpis-personal-message__btn">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#link"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="kpis-personal-message__close">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="kpis-personal__list">
+                                        <li class="kpis-personal__item">
+                                            Грейд
+                                            <span>Директор</span>
+                                        </li>
+                                        <li class="kpis-personal__item">
+                                            Должность
+                                            <span>Директор TAX Concalting</span>
+                                        </li>
+                                        <li class="kpis-personal__item">
+                                            Платформа
+                                            <span>TAX</span>
+                                        </li>
+                                        <li class="kpis-personal__item">
+                                            Отдел
+                                            <span>Tax Consulting / HRC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="right-tab2" class="tabs__block">
+                                <div class="kpis-main__comments kpis-comments">
+                                    <h3 class="kpis-comments__title">Комментарии и изменения</h3>
+                                    <div class="kpis-comments__options">
+                                        <div class="kpis-comments__option">
+                                            <span>Цели:</span>
+                                            <select class="kpis-comments__select select" tabindex="-1"
+                                                style="display: none;">
+                                                <option value="value1">Все</option>
+                                                <option value="value2">Опция 2</option>
+                                                <option value="value3">Опция 3</option>
+                                                <option value="value4">Опция 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="kpis-comments__option">
+                                            <span>Тип события:</span>
+                                            <select class="kpis-comments__select select" tabindex="-1"
+                                                style="display: none;">
+                                                <option value="value1">Все</option>
+                                                <option value="value2">Опция 2</option>
+                                                <option value="value3">Опция 3</option>
+                                                <option value="value4">Опция 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="kpis-comments__option">
+                                            <span>Порядок:</span>
+                                            <select class="kpis-comments__select select" tabindex="-1"
+                                                style="display: none;">
+                                                <option value="value1">Более ранние - сначала</option>
+                                                <option value="value2">Опция 2</option>
+                                                <option value="value3">Опция 3</option>
+                                                <option value="value4">Опция 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-comments__date">23 июля 2024</div>
+                                    <div class="kpis-comments__block">
+                                        <ul class="kpis-comments__list">
+                                            <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                                            <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                                            <li class="kpis-comments__item">Предыдущее значение: -</li>
+                                            <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                                            </li>
+                                        </ul>
+                                        <ul class="kpis-comments__list">
+                                            <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                                            <li class="kpis-comments__item">Автор события: <a href="#"
+                                                    class="kpis-comments__link">Алексей Сафонов</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="kpis-comments__block">
+                                        <ul class="kpis-comments__list">
+                                            <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                                            <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                                            <li class="kpis-comments__item">Предыдущее значение: Индивидуальная выручка,
+                                                9%</li>
+                                            <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                                            </li>
+                                        </ul>
+                                        <ul class="kpis-comments__list">
+                                            <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                                            <li class="kpis-comments__item">Автор события: <a href="#"
+                                                    class="kpis-comments__link">Алексей Сафонов</a>
+                                            </li>
+                                            <li class="kpis-comments__item">Комментарии: ХХХХХХХХХ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="kpis-comments__status">
+                                        На редактировании у сотрудника -> На согласовании у тимлидера
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="right-tab3" class="tabs__block">
+                                <div class="kpis-main__docs kpis-docs">
+                                    <h3 class="kpis-docs__title">Подтверждающие документы</h3>
+                                    <div class="kpis-docs__file kpis-file">
+                                        <div class="kpis-file__name">document_file_name.pdf</div>
+                                        <div class="kpis-file__footer">
+                                            <div class="kpis-file__size">100kb</div>
+                                            <div class="kpis-file__status">Загружен</div>
+                                            <button type="button" class="kpis-file__btn">Скачать</button>
+                                            <button type="button" class="kpis-file__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#delete2"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <form action="#" class="kpis-docs__form kpis-form">
+                                        <h3 class="kpis-form__title">Загрузить новый файл</h3>
+                                        <div class="kpis-form__block">
+                                            <div class="kpis-form__label">Название файла</div>
+                                            <input class="kpis-form__input" type="text" value="Новый файл">
+                                        </div>
+                                        <div class="kpis-form__new">
+                                            <div class="kpis-form__icon">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#file"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="kpis-form__info">
+                                                <a href="#" class="kpis-form__link">
+                                                    Выберите
+                                                    <input type="file">
+                                                </a>
+                                                или перетащите
+                                            </div>
+                                            <div class="kpis-form__size">max. 3MB</div>
+                                        </div>
+                                        <div class="kpis-form__block kpis-form__block_inactive">
+                                            <div class="kpis-form__label">Название файла</div>
+                                            <input class="kpis-form__input" type="text" value="Новый файл" disabled>
+                                        </div>
+                                        <button type="submit" class="kpis-form__btn">Загрузить новый файл</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="right-tab4" class="tabs__block">
+                                <div class="kpis-main__status kpis-status">
+                                    <h3 class="kpis-status__title"></h3>
+                                    <div class="kpis-status__item">
+                                        <div class="kpis-status__datetime">
+                                            <span>15:50</span>
+                                            <span>25 сен. 2024</span>
+                                        </div>
+                                        <div class="kpis-status__info">
+                                            <p class="kpis-status__desc">Изменение этапа:</p>
+                                            <p class="kpis-status__details">
+                                                На редактировании у сотрудника -> На согласовании у тимлидера
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-status__comment kpis-status-comment">
+                                        <div class="kpis-status-comment__header">
+                                            <h3 class="kpis-status-comment__title">Итоговый комментарий тимлидера</h3>
+                                            <div class="kpis-status-comment__label">Оценка 3</div>
+                                        </div>
+                                        <div class="kpis-status-comment__body">
+                                            <p class="kpis-status-comment__text">
+                                                Невероятно классные результаты, номинирую сотркдника на повышение грейда
+                                                и повышение заработной плати и выплаты бонусов в троекратном размере
+                                            </p>
+                                            <button type="button" class="kpis-status-comment__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#edit"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-status__comment kpis-status-comment">
+                                        <div class="kpis-status-comment__header">
+                                            <h3 class="kpis-status-comment__title">Итоговый комментарий тимлидера</h3>
+                                        </div>
+                                        <div class="kpis-status-comment__body">
+                                            <p class="kpis-status-comment__text">
+                                                Невероятно классные результаты, номинирую сотркдника на повышение грейда
+                                                и повышение заработной плати и выплаты бонусов в троекратном размере
+                                            </p>
+                                            <button type="button" class="kpis-status-comment__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#edit"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-status__item">
+                                        <div class="kpis-status__datetime">
+                                            <span>15:50</span>
+                                            <span>25 сен. 2024</span>
+                                        </div>
+                                        <div class="kpis-status__info">
+                                            <p class="kpis-status__desc">Изменение этапа:</p>
+                                            <p class="kpis-status__details">
+                                                На редактировании у сотрудника -> На согласовании у тимлидера
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-status__item">
+                                        <div class="kpis-status__datetime">
+                                            <span>15:50</span>
+                                            <span>25 сен. 2024</span>
+                                        </div>
+                                        <div class="kpis-status__info">
+                                            <p class="kpis-status__desc">Изменение этапа:</p>
+                                            <p class="kpis-status__details">
+                                                На редактировании у сотрудника -> На согласовании у тимлидера
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-status__item">
+                                        <div class="kpis-status__datetime">
+                                            <span>15:50</span>
+                                            <span>25 сен. 2024</span>
+                                        </div>
+                                        <div class="kpis-status__info">
+                                            <p class="kpis-status__desc">Изменение этапа:</p>
+                                            <p class="kpis-status__details">
+                                                На редактировании у сотрудника -> На согласовании у тимлидера
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="how-to-say-thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content how-modal">
+            <h2 class="how-modal__title">Как поблагодарить коллег</h2>
+            <ol class="how-modal__list">
+                <li class="how-modal__item">
+                    Выбери одного или несколько сотрудников, которому ты хочешь выразить благодарность
+                </li>
+                <li class="how-modal__item">
+                    Нажми на кнопку «Поблагодарить коллег» на главной странице Compass или в профиле сотрудника
+                </li>
+                <li class="how-modal__item">
+                    Напиши сообщение, содержащее вашу благодарность, и выбери уровень ценность, которой
+                    соответствует твоя благодарность
+                </li>
+                <li class="how-modal__item">
+                    Выбери на сколько тедкоинов вы хотите отблагодарить коллегу.
+                </li>
+                <li class="how-modal__item">
+                    Нажми кнопку «Поблагодарить». Она тут же будет опубликована в общей и персональной ленте
+                    благодарностей!
+                </li>
+                <li class="how-modal__item">
+                    В конце месяца сотрудник получит все тедкоины, которые были отправлены ему в качестве
+                    благодарности
+                </li>
+            </ol>
+            <p class="how-modal__text">
+                Система «Compass» позволяет сохранять все благодарности
+                и отслеживать, кому и за что ты выразил свою признательность. Это поможет поддерживать хорошие
+                отношения внутри фирмы и укрепить корпоративную культуру. Благодарим тебя, за то, что делаешь наш
+                коллектив лучше!
+            </p>
+            <button type="button" class="how-modal__close modal__close">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="say-thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content thanks-modal">
+            <h2 class="thanks-modal__title">Хочу сказать спасибо</h2>
+            <div class="thanks-modal__progress progress-thanks" data-step="step1">
+                <div class="progress-thanks__bar"></div>
+                <div class="progress-thanks__body">
+                    <div class="progress-thanks__step">Выбор коллег и написание благодарности</div>
+                    <div class="progress-thanks__step">Выбор соответствующей ценности</div>
+                    <div class="progress-thanks__step">Награждение <br>за помощь</div>
+                </div>
+            </div>
+            <div class="thanks-modal__body">
+                <div class="thanks-modal__wrapper" data-step="step1">
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <div class="thanks-modal__input input-thanks">
+                                <div class="input-thanks__label">Выбери одного или несколько коллег для благодарности
+                                </div>
+                                <select multiple="" data-placeholder=" " class="input-thanks__select select"
+                                    tabindex="-1" style="display: none;">
+                                    <option value=""></option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                    <option>Мария Абрамович (maria.abramovich@tedo.ru)</option>
+                                </select>
+                            </div>
+                            <div class="thanks-modal__input input-thanks">
+                                <div class="input-thanks__header">
+                                    <div class="input-thanks__label">Расскажи, как коллега тебе помог</div>
+                                    <a href="#" class="input-thanks__link" data-modal="how-to-say-thanks">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#info"></use>
+                                        </svg>
+                                        Как лучше всего благодарить
+                                    </a>
+                                </div>
+                                <textarea name="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__next" data-target="step2">Далее</button>
+                            <button type="button" class="thanks-modal__cancel modal__close">Отмена</button>
+                        </div>
+                    </div>
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <div class="thanks-modal__radio radio-thanks radio">
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">Д</div>
+                                        <div class="radio-thanks__name">Деловая этика</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Мы честны, соблюдаем этические нормы и ставим во
+                                            главу угла доверие к нашему бизнесу</h2>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Мы против победы любой ценой.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Доверие дает нам базу, основу, фундамент во всем, что мы делаем.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Нашему бизнесу доверяют, потому что мы последовательны, у нас есть
+                                                правила,
+                                                которые мы не нарушаем.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Кодекс этики – основа нашего поведения и руководство для принятия
+                                                решений во
+                                                всех ситуациях.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Как только мы один раз пошли на сделку с совестью, мы теряем доверие к
+                                                себе
+                                                и рушим все, на чем строится наша бизнес-модель.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Наш бизнес строится на доверии клиентов и сотрудников.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="d">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">О</div>
+                                        <div class="radio-thanks__name">Отношения</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="o">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">В</div>
+                                        <div class="radio-thanks__name">Высокое качество</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="v">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">Е</div>
+                                        <div class="radio-thanks__name">Ежедневное развити</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="e">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">Р</div>
+                                        <div class="radio-thanks__name">Результат</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="r">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">И</div>
+                                        <div class="radio-thanks__name">Инновации</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="i">
+                                </div>
+                                <div class="radio-thanks__body radio__item">
+                                    <div class="radio-thanks__main">
+                                        <div class="radio-thanks__letter">Е</div>
+                                        <div class="radio-thanks__name">Единая фирма</div>
+                                    </div>
+                                    <div class="radio-thanks__desc">
+                                        <h2 class="radio-thanks__title">Отношения</h2>
+                                        <p class="radio-thanks__text">Мы уважаем, слушаем и поддерживаем друг друга</p>
+                                        <ul class="radio-thanks__list">
+                                            <li class="radio-thanks__item">
+                                                Все ценное в нашем бизнесе создается людьми. Люди – главный фокус наших
+                                                инвестиций: поддерживаем ваши идеи и начинания и вкладываемся в
+                                                развитие.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Создаем дружелюбную среду, в которой хочется находиться: ценим и
+                                                благодарим друг
+                                                друга, поддерживаем равные партнерские отношения безотносительно
+                                                должностных
+                                                уровней и ролей.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Уважаем время друг друга. Заблаговременно предупреждаем коллег, если
+                                                что-то
+                                                меняется в наших планах.
+                                            </li>
+                                            <li class="radio-thanks__item">
+                                                Лидеры личным примером демонстрируют культуру взаимного уважения: ты
+                                                всегда
+                                                можешь обратиться за помощью к коллегам и лидеру.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="radio" name="value" value="e">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__next" data-target="step3">Далее</button>
+                            <button type="button" class="thanks-modal__prev" data-target="step1">Назад</button>
+                        </div>
+                    </div>
+                    <div class="thanks-modal__step">
+                        <div class="thanks-modal__block">
+                            <p class="thanks-modal__text">
+                                Выбери количество тедкоинов, которое будет отправлено каждому коллеге
+                            </p>
+                            <p class="thanks-modal__user">
+                                Мария Абрамович (maria.abramovich@tedo.ru)
+                            </p>
+                            <div class="thanks-modal__grade">
+                                <div class="thanks-modal__coins">0 тедкоинов</div>
+                                <div class="thanks-modal__range range-single">
+                                    <input type="range" min="0" max="1000" step="1" value="0">
+                                    <div class="range-single__slider">
+                                        <div class="range-single__progress"></div>
+                                        <div class="range-single__thumb"></div>
+                                    </div>
+                                </div>
+                                <div class="thanks-modal__current">0</div>
+                            </div>
+                            <p class="thanks-modal__user">
+                                Константин Константинопольский (maria.abramovich@tedo.ru)
+                            </p>
+                            <div class="thanks-modal__grade">
+                                <div class="thanks-modal__coins">0 тедкоинов</div>
+                                <div class="thanks-modal__range range-single">
+                                    <input type="range" min="0" max="1000" step="1" value="0">
+                                    <div class="range-single__slider">
+                                        <div class="range-single__progress"></div>
+                                        <div class="range-single__thumb"></div>
+                                    </div>
+                                </div>
+                                <div class="thanks-modal__current">0</div>
+                            </div>
+                            <div class="thanks-modal__balance balance-thanks">
+                                <div class="balance-thanks__name">Текущий баланс:</div>
+                                <div class="balance-thanks__info">
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">200 тедкоинов спасибо</div>
+                                        <div class="balance-thanks__value">-200 тедкоинов спасибо</div>
+                                    </div>
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">800 тедкоинов</div>
+                                        <div class="balance-thanks__value">-100 тедкоинов</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thanks-modal__balance balance-thanks">
+                                <div class="balance-thanks__name">Остаток</div>
+                                <div class="balance-thanks__info">
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">0 тедкоинов спасибо</div>
+                                    </div>
+                                    <div class="balance-thanks__row">
+                                        <div class="balance-thanks__value">700 тедкоинов</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks-modal__btns">
+                            <button type="button" class="thanks-modal__apply">Поблагодарить</button>
+                            <button type="button" class="thanks-modal__prev" data-target="step2">Назад</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="add-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Создать зачачу</h2>
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Родительская цель</h3>
+                <select class="kpis-modal-option__select select" tabindex="-1" style="display: none;">
+                    <option value="value1">GM Платформы</option>
+                    <option value="value2">Опция 2</option>
+                    <option value="value3">Опция 3</option>
+                    <option value="value4">Опция 4</option>
+                </select>
+            </div>
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Описание задачи</h3>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+            <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="edit-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Редактировать цель</h2>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Название</h3>
+                <input class="kpis-modal-option__input" type="text" value="GM Платформы">
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Описание</h3>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Значение</h3>
+                <div class="kpis-modal-option__wrapper">
+                    <input class="kpis-modal-option__input" type="text" value="54">
+                    <select class="kpis-modal-option__select select" tabindex="-1" style="display: none;">
+                        <option value="value1">Млн. руб.</option>
+                        <option value="value2">Опция 2</option>
+                        <option value="value3">Опция 3</option>
+                        <option value="value4">Опция 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <div class="kpis-modal-option__desc">
+                    <h3 class="kpis-modal-option__title">Комментарий</h3>
+                    <p class="kpis-modal-option__warning">
+                        Вы изменили предыдущее значение данной цели, поэтому комментарий обязателен для заполнения
+                    </p>
+                </div>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+
+            <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="comment-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Комментарий и история цели</h2>
+            <div class="kpis-modal__comments kpis-comments">
+                <div class="kpis-comments__name">
+                    <span>Название цели:</span>
+                    <span>GM Платформы</span>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: -</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a></li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: Индивидуальная выручка,
+                            9%</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a>
+                        </li>
+                        <li class="kpis-comments__item">Комментарии: ХХХХХХХХХ</li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__status">
+                    На редактировании у сотрудника -> На согласовании у тимлидера
+                </div>
+            </div>
+            <div class="kpis-modal__comment kpis-modal-comment">
+                <h3 class="kpis-modal-comment__title">Новый комментарий</h3>
+                <form action="" class="kpis-modal-comment__form">
+                    <div class="kpis-modal-comment__body">
+                        <div class="kpis-modal-comment__image">
+                            <img src="img/kpis/user.svg" alt="Image">
+                        </div>
+                        <textarea class="kpis-modal-comment__textarea"></textarea>
+                    </div>
+                    <button class="kpis-modal-comment__btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240731203926"></script>
+</body>
+
+</html>

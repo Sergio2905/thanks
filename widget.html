@@ -5,8 +5,8 @@
     <title>Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240708131308">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240708131308"
+    <link rel="stylesheet" href="css/style.min.css?_v=20240731203926">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240731203926"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
@@ -466,7 +466,134 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20240708131308"></script>
+
+<div class="modal" id="add-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Создать зачачу</h2>
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Родительская цель</h3>
+                <select class="kpis-modal-option__select select" tabindex="-1" style="display: none;">
+                    <option value="value1">GM Платформы</option>
+                    <option value="value2">Опция 2</option>
+                    <option value="value3">Опция 3</option>
+                    <option value="value4">Опция 4</option>
+                </select>
+            </div>
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Описание задачи</h3>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+            <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="edit-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Редактировать цель</h2>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Название</h3>
+                <input class="kpis-modal-option__input" type="text" value="GM Платформы">
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Описание</h3>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Значение</h3>
+                <div class="kpis-modal-option__wrapper">
+                    <input class="kpis-modal-option__input" type="text" value="54">
+                    <select class="kpis-modal-option__select select" tabindex="-1" style="display: none;">
+                        <option value="value1">Млн. руб.</option>
+                        <option value="value2">Опция 2</option>
+                        <option value="value3">Опция 3</option>
+                        <option value="value4">Опция 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <div class="kpis-modal-option__desc">
+                    <h3 class="kpis-modal-option__title">Комментарий</h3>
+                    <p class="kpis-modal-option__warning">
+                        Вы изменили предыдущее значение данной цели, поэтому комментарий обязателен для заполнения
+                    </p>
+                </div>
+                <textarea class="kpis-modal-option__textarea" placeholder="Type here"></textarea>
+            </div>
+
+            <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="comment-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Комментарий и история цели</h2>
+            <div class="kpis-modal__comments kpis-comments">
+                <div class="kpis-comments__name">
+                    <span>Название цели:</span>
+                    <span>GM Платформы</span>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: -</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a></li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: Индивидуальная выручка,
+                            9%</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a>
+                        </li>
+                        <li class="kpis-comments__item">Комментарии: ХХХХХХХХХ</li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__status">
+                    На редактировании у сотрудника -> На согласовании у тимлидера
+                </div>
+            </div>
+            <div class="kpis-modal__comment kpis-modal-comment">
+                <h3 class="kpis-modal-comment__title">Новый комментарий</h3>
+                <form action="" class="kpis-modal-comment__form">
+                    <div class="kpis-modal-comment__body">
+                        <div class="kpis-modal-comment__image">
+                            <img src="img/kpis/user.svg" alt="Image">
+                        </div>
+                        <textarea class="kpis-modal-comment__textarea"></textarea>
+                    </div>
+                    <button class="kpis-modal-comment__btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240731203926"></script>
 </body>
 
 </html>
