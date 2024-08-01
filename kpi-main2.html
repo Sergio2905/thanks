@@ -5,8 +5,8 @@
     <title>Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240731203926">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240731203926"
+    <link rel="stylesheet" href="css/style.min.css?_v=20240801151656">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240801151656"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
@@ -89,28 +89,74 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color" checked>
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color" checked>
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="kpis-main-table__row">
@@ -147,28 +193,74 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color" checked>
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="kpis-main-table__row">
@@ -205,28 +297,74 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="kpis-main-table__row">
@@ -263,28 +401,74 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="kpis-main-table__row">
@@ -321,76 +505,74 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="kpis-main-table__subrow">
-                                        <div class="kpis-main-table__item">
-                                            <button type="button" class="kpis-main-table__btn">
-                                                <svg>
-                                                    <use href="img/icons/icons.svg#drag"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="kpis-main-table__item">
-                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
-                                                используемый в печати и вэб-дизайне.</p>
-                                            <button type="button" class="kpis-main-table__btn"
-                                                data-modal="comment-kpis">
-                                                <svg>
-                                                    <use href="img/icons/icons.svg#chat2"></use>
-                                                </svg>
-                                            </button>
-                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
-                                                <svg>
-                                                    <use href="img/icons/icons.svg#dots"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
-                                        </div>
-                                        <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="kpis-main-table__subrow">
@@ -417,28 +599,168 @@
                                             </button>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                         <div class="kpis-main-table__item">
-                                            <select class="kpis-main-table__select select" tabindex="-1"
-                                                style="display: none;">
-                                                <option value="value1">Выполнен полностью</option>
-                                                <option value="value2">Выполнен частично</option>
-                                                <option value="value3">Не выполнено</option>
-                                                <option value="value4">Утратила актуальность</option>
-                                                <option value="value5">В работе</option>
-                                                <option value="value6">Утратила актуальность</option>
-                                                <option value="value6">Не установлен</option>
-                                            </select>
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kpis-main-table__subrow">
+                                        <div class="kpis-main-table__item">
+                                            <button type="button" class="kpis-main-table__btn">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#drag"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <p class="kpis-main-table__text">Lorem Ipsum - это текст-"рыба", часто
+                                                используемый в печати и вэб-дизайне.</p>
+                                            <button type="button" class="kpis-main-table__btn"
+                                                data-modal="comment-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#chat2"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="kpis-main-table__btn" data-modal="edit-kpis">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#dots"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
+                                        </div>
+                                        <div class="kpis-main-table__item">
+                                            <div class="kpis-main-table__select custom-select">
+                                                <div class="custom-select__container">
+                                                    <div class="custom-select__option" data-status="green">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен полностью</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="yellow">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Выполнен частично</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="red">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не выполнено</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="purple">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="blue">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">В работе</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="grey">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Утратила актуальность</div>
+                                                    </div>
+                                                    <div class="custom-select__option" data-status="dark">
+                                                        <input type="radio" name="color">
+                                                        <div class="custom-select__label">Не установлен</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select__checked"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1902,7 +2224,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20240731203926"></script>
+    <script src="js/app.min.js?_v=20240801151656"></script>
 </body>
 
 </html>
