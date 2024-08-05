@@ -5,8 +5,8 @@
     <title>Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240801151656">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240801151656"
+    <link rel="stylesheet" href="css/style.min.css?_v=20240805213322">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240805213322"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
@@ -29,13 +29,13 @@
                         <div class="kpis-table__item">Текущий этап:</div>
                     </div>
                     <div class="kpis-table__row">
-                        <div class="kpis-table__item kpis-table__item_undeline">01 июля 2024 - 30 июня 2025</div>
+                        <a href="#" class="kpis-table__item kpis-table__item_undeline">01 июля 2024 - 30 июня 2025</a>
                         <div class="kpis-table__item">22 апр. 2024</div>
                         <div class="kpis-table__item">Цели назначены</div>
                         <div class="kpis-table__item">Ожидаем согласование целей от тебя</div>
                     </div>
                     <div class="kpis-table__row">
-                        <div class="kpis-table__item kpis-table__item_undeline">01 июля 2024 - 30 июня 2025</div>
+                        <a href="#" class="kpis-table__item kpis-table__item_undeline">01 июля 2024 - 30 июня 2025</a>
                         <div class="kpis-table__item">22 апр. 2024</div>
                         <div class="kpis-table__item">Итоги подведены </div>
                         <div class="kpis-table__item">Ожидаем подведение итогов от твоего тимлидера</div>
@@ -478,6 +478,34 @@
     </div>
 </div>
 
+<div class="modal" id="delete-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Удалить</h2>
+            <p class="kpis-modal__desc">Вы действительно хотите удалить?</p>
+            <div class="kpis-modal__btns">
+                <button type="button" class="kpis-modal__delete modal__close">Удалить</button>
+                <button type="button" class="kpis-modal__cancel modal__close">Отменить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="new-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Добавление раздела</h2>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Название</h3>
+                <input class="kpis-modal-option__input" type="text" placeholder="Введите название раздела">
+            </div>
+
+            <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+        </div>
+    </div>
+</div>
+
 <div class="modal" id="edit-kpis">
     <div class="modal__wrapper">
         <div class="modal__content kpis-modal">
@@ -582,7 +610,133 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20240801151656"></script>
+
+<div class="modal" id="subcomment-kpis">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Комментарий и история подцели</h2>
+            <div class="kpis-modal__comments kpis-comments">
+                <div class="kpis-comments__name">
+                    <span>Название цели:</span>
+                    <span>GM Платформы</span>
+                </div>
+                <div class="kpis-comments__name">
+                    <span>Название подцели:</span>
+                    <span>GM Платформы</span>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: -</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a></li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__block">
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Цель: ХХХХХХХ</li>
+                        <li class="kpis-comments__item">Тип действия: Редактирование</li>
+                        <li class="kpis-comments__item">Предыдущее значение: Индивидуальная выручка,
+                            9%</li>
+                        <li class="kpis-comments__item">Новое значение: Индивидуальная выручка, 9%
+                        </li>
+                    </ul>
+                    <ul class="kpis-comments__list">
+                        <li class="kpis-comments__item">Дата и время события: 23.07.2024, 14:44</li>
+                        <li class="kpis-comments__item">Автор события: <a href="#" class="kpis-comments__link">Алексей
+                                Сафонов</a>
+                        </li>
+                        <li class="kpis-comments__item">Комментарии: ХХХХХХХХХ</li>
+                    </ul>
+                </div>
+                <div class="kpis-comments__date">23 июля 2024</div>
+                <div class="kpis-comments__status">
+                    На редактировании у сотрудника -> На согласовании у тимлидера
+                </div>
+            </div>
+            <div class="kpis-modal__comment kpis-modal-comment">
+                <h3 class="kpis-modal-comment__title">Новый комментарий</h3>
+                <form action="" class="kpis-modal-comment__form">
+                    <div class="kpis-modal-comment__body">
+                        <div class="kpis-modal-comment__image">
+                            <img src="img/kpis/user.svg" alt="Image">
+                        </div>
+                        <textarea class="kpis-modal-comment__textarea"></textarea>
+                    </div>
+                    <button class="kpis-modal-comment__btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="employee-comment">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Итоговый комментарий сотрудника</h2>
+
+            <p class="kpis-modal__desc">Комментарий и оценку можно будет отредактировать в разделе "Статусы и
+                результаты"</p>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Текст комментария</h3>
+                <textarea class="kpis-modal-option__textarea"></textarea>
+            </div>
+
+            <div class="kpis-modal__btns">
+                <button type="button" class="kpis-modal__cancel modal__close">Отменить</button>
+                <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="teamleader-comment">
+    <div class="modal__wrapper">
+        <div class="modal__content kpis-modal">
+            <h2 class="kpis-modal__title">Итоговый комментарий тимлидера</h2>
+
+            <div class="kpis-modal__option kpis-modal-option">
+                <h3 class="kpis-modal-option__title">Текст комментария</h3>
+                <textarea class="kpis-modal-option__textarea"></textarea>
+            </div>
+
+            <div class="kpis-modal__vote kpis-modal-vote">
+                <button type="button" class="kpis-modal-vote__btn">Не применимо</button>
+                <div class="kpis-modal-vote__btns">
+                    <button type="button" class="kpis-modal-vote__btn">5</button>
+                    <button type="button" class="kpis-modal-vote__btn">4</button>
+                    <button type="button" class="kpis-modal-vote__btn">3+</button>
+                    <button type="button" class="kpis-modal-vote__btn">3</button>
+                    <button type="button" class="kpis-modal-vote__btn">3-</button>
+                    <button type="button" class="kpis-modal-vote__btn">2</button>
+                    <button type="button" class="kpis-modal-vote__btn">1</button>
+                </div>
+                <div class="kpis-modal-vote__help">
+                    <svg>
+                        <use href="img/icons/icons.svg#info"></use>
+                    </svg>
+                    <div class="kpis-modal-vote__tooltip">
+                        Текст подсказки. Текст подсказки.
+                    </div>
+                </div>
+            </div>
+
+            <div class="kpis-modal__btns">
+                <button type="button" class="kpis-modal__cancel modal__close">Отменить</button>
+                <button type="button" class="kpis-modal__btn modal__close">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240805213322"></script>
 </body>
 
 </html>
