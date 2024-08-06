@@ -273,12 +273,11 @@ body._lock {
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
   background: var(--white);
   border-radius: 0 0 8px 8px;
   scrollbar-width: thin;
   scrollbar-color: #E4E4E4 transparent;
+  display: none;
 }
 
 .custom-select__container::-webkit-scrollbar {
@@ -293,9 +292,8 @@ body._lock {
 .custom-select__container._active {
   max-height: 200px;
   overflow-y: auto;
-  opacity: 1;
-  visibility: visible;
   z-index: 100;
+  display: block;
 }
 
 .custom-select__option {
@@ -1079,7 +1077,6 @@ body._lock {
   width: 24px;
   min-width: 24px;
   height: 24px;
-  margin-left: 10px;
 }
 
 .kpis-modal-vote__help svg {
@@ -1106,6 +1103,46 @@ body._lock {
   pointer-events: none;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.kpis-modal-vote .radio {
+  display: flex;
+}
+
+.kpis-modal-vote .radio__item {
+  border-radius: 4px;
+  color: var(--blue);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border: 1px solid var(--blue);
+  transition: all 0.5s ease;
+  min-width: 55px;
+}
+
+.kpis-modal-vote .radio__item.active {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.kpis-modal-vote .radio__items {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.kpis-modal-vote .radio__items .radio__item {
+  border-radius: 0;
+}
+
+.kpis-modal-vote .radio__items .radio__item:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.kpis-modal-vote .radio__items .radio__item:last-child {
+  border-radius: 0 4px 4px 0;
 }
 
 .thanks-line__header {
@@ -2612,7 +2649,7 @@ body._lock {
 
 .kpis-main-table__tooltip {
   position: absolute;
-  top: 120%;
+  bottom: 0;
   right: 0;
   border-radius: 8px;
   background: var(--white);
@@ -2620,13 +2657,14 @@ body._lock {
   border: 1px solid rgba(110, 125, 140, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  transform: translate(0, 20px);
+  transform: translate(0, 100%);
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
   pointer-events: none;
   font-weight: 400;
   line-height: 1.5;
+  display: none;
 }
 
 .kpis-main-table__btn {
@@ -2673,7 +2711,7 @@ body._lock {
 .kpis-main-menu.active .kpis-main-menu__items {
   opacity: 1;
   visibility: visible;
-  transform: translate(0, 0);
+  display: block;
 }
 
 .kpis-main-menu__btn {
@@ -2690,7 +2728,7 @@ body._lock {
 
 .kpis-main-menu__items {
   position: absolute;
-  top: 120%;
+  bottom: 0;
   right: 0;
   padding: 8px 16px;
   background: var(--white);
@@ -2703,8 +2741,9 @@ body._lock {
   align-items: flex-start;
   opacity: 0;
   visibility: hidden;
-  transform: translate(0, 20px);
+  transform: translate(0, 100%);
   transition: all 0.5s ease;
+  display: none;
 }
 
 .kpis-main-menu__item:not(:last-child) {
@@ -2916,6 +2955,11 @@ body._lock {
     visibility: visible;
   }
 
+  .kpis-modal-vote .radio__item:hover {
+    color: var(--white);
+    background: var(--blue);
+  }
+
   .item-thanks__user:hover {
     text-decoration: underline;
   }
@@ -2971,9 +3015,9 @@ body._lock {
   }
 
   .kpis-main-table__help:hover .kpis-main-table__tooltip {
-    transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
+    display: block;
   }
 
   .kpis-main-menu__item:hover {
